@@ -1,0 +1,28 @@
+enabled = true
+
+# The AES-CBC-256 key for Lua encryption/decryption.
+key = "USCaPQpA4TSNVxMI1v9SK9UC0yZuAnb2"
+
+# Encryption output directory path
+encryption_output = "enc"
+# Decryption output directory path
+decryption_output = "dec"
+
+# When saving level file, inject `filename = "..."` to the header so the game can load.
+inject_level_filename = true
+
+# Lua file compression before encryption.
+# Available options are "none" and "7z".
+compression = "none"
+
+# Caching for encryption checking result.
+# When enabled, autoenc will not encrypt or decrypt the file again if the file is unchanged.
+[cache]
+enabled = true
+cache_file = "autoenc-cache.bin"
+
+[logging]
+enabled = false
+log_file = "autoenc.log"
+# max_level = "Trace"
+
