@@ -1,6 +1,6 @@
 # Autoenc
 
-This is a plugin for Angry Birds modding that lets the game load unencrypted Lua files.
+This is a plugin for Angry Birds modding that lets the game load decrypted Lua files.
 
 It hooks game's `fopen` calls and does:
 1. Automatically decrypt Lua files to `dec/`.
